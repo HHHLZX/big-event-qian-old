@@ -5,9 +5,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        vue(),
-    ],
+    plugins: [vue(),],
+    base: '/big-event-qian/', // 替换为你的 GitHub 仓库名
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
